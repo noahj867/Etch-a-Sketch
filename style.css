@@ -1,0 +1,21 @@
+:root {
+    --grid-rows: 1;
+    --grid-columns: 1;
+}
+
+#container {
+    display: grid;
+    border: 2em;
+    border-color: black;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-columns), 1fr);
+}
+
+.cell {
+    padding: 10px;
+    text-align: center;
+}
+
+/* .cellFill {
+    background-color: black;
+} */
